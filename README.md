@@ -6,12 +6,14 @@ A mini-project simulating a centralized college database using Oracle SQL and PL
 
 ## 🔧 Key Features
 
-- Student, Course, and Enrollment tables
-- PL/SQL Package (`CollegeDBPackage`) with:
-  - `update_course` procedure for updating course IDs with validation
-  - `delete_student` procedure with exception handling
-- BEFORE and AFTER triggers on UPDATE and DELETE operations
-- Multi-row DML operations with output via `DBMS_OUTPUT`
+- Core tables: `students`, `courses`, and `enrollments`
+- PL/SQL package (`CollegeDBPackage`) implementing:
+  - `update_course`: updates course IDs with validation
+  - `delete_student`: removes a student with error handling
+- Triggers to maintain integrity:
+  - ‘Before’ and ‘After’ triggers for `UPDATE` on the `courses` table
+  - ‘Before’ and ‘After’ triggers for `DELETE` on the `students` table
+
 
 ---
 
@@ -31,9 +33,3 @@ Relational integrity is enforced using primary and foreign key constraints.
 - PL/SQL (Packages, Procedures, Triggers)
 
 ---
-
-## 👨‍💻 Author
-
-- **Harshavardhan Gali**
-
-> Originally developed as an academic group project. This version is sanitized and published for professional showcasing.
