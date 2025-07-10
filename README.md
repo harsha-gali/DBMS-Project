@@ -1,35 +1,45 @@
-# 📚 Centralized College Database – Oracle PL/SQL
+# 📚 Centralized College Database – Oracle SQL & PL/SQL
 
-A mini-project simulating a centralized college database using Oracle SQL and PL/SQL. Includes schema design, procedures using packages, and integrity enforcement via triggers.
-
----
-
-## 🔧 Key Features
-
-- Core tables: `students`, `courses`, and `enrollments`
-- PL/SQL package (`CollegeDBPackage`) implementing:
-  - `update_course`: updates course IDs with validation
-  - `delete_student`: removes a student with error handling
-- Triggers to maintain integrity:
-  - ‘Before’ and ‘After’ triggers for `UPDATE` on the `courses` table
-  - ‘Before’ and ‘After’ triggers for `DELETE` on the `students` table
-
+This project implements a centralized college database system using **Oracle SQL** and **PL/SQL**, developed as part of a university-level DBMS course. It showcases core concepts in **relational schema design**, **data integrity enforcement**, and **procedural programming** using packages and triggers.
 
 ---
 
-## 🧩 Schema Design
+## 🧩 Schema Overview
+
+The system models a college database with the following primary entities:
 
 - `students(StudentID, FirstName, LastName, Department, Age)`
 - `courses(CourseID, CourseName, Department, Professor)`
 - `enrollments(EnrollmentID, StudentID, CourseID)`
 
-Relational integrity is enforced using primary and foreign key constraints.
+All relations are normalized and connected using **primary** and **foreign key constraints** to ensure referential integrity.
 
 ---
 
-## 🧱 Technologies
+## 🔧 Key Features
 
-- Oracle SQL
-- PL/SQL (Packages, Procedures, Triggers)
+- **PL/SQL Package (`CollegeDBPackage`)**  
+  Implements two procedures:
+  - `update_course`: Updates course ID with validation
+  - `delete_student`: Deletes a student with error handling
+
+- **Triggers**  
+  Enforce business rules and data integrity:
+  - `BEFORE` and `AFTER` triggers for `UPDATE` on the `courses` table
+  - `BEFORE` and `AFTER` triggers for `DELETE` on the `students` table
 
 ---
+
+## 🧱 Technologies Used
+
+- **Oracle SQL** – for schema definition and constraints
+- **PL/SQL** – for stored procedures, packages, and triggers
+
+---
+
+## 📂 Files Included
+
+- `create_tables.sql` – Table definitions and key constraints
+- `college_package.sql` – PL/SQL package and procedures
+- `triggers.sql` – Trigger implementations
+- `README.md` – Project overview and documentation
