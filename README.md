@@ -1,10 +1,10 @@
-# 📚 Centralized College Database – Oracle SQL & PL/SQL
+# Centralized College Database – Oracle SQL & PL/SQL
 
 This project implements a centralized college database system using **Oracle SQL** and **PL/SQL**, developed as part of a university-level DBMS course. It showcases core concepts in **relational schema design**, **data integrity enforcement**, and **procedural programming** using packages and triggers.
 
 ---
 
-## 🧩 Schema Overview
+## Schema Overview
 
 The system models a college database with the following primary entities:
 
@@ -16,7 +16,7 @@ All relations are normalized and connected using **primary** and **foreign key c
 
 ---
 
-## 🔧 Key Features
+## Key Features
 
 - **PL/SQL Package (`CollegeDBPackage`)**  
   Implements two procedures:
@@ -30,14 +30,14 @@ All relations are normalized and connected using **primary** and **foreign key c
 
 ---
 
-## 🧱 Technologies Used
+## Technologies Used
 
 - **Oracle SQL** – for schema definition and constraints
 - **PL/SQL** – for stored procedures, packages, and triggers
 
 ---
 
-## 📂 Files Included
+## Files Included
 
 - `create_tables.sql` – Table definitions and key constraints
 - `college_package.sql` – PL/SQL package and procedures
